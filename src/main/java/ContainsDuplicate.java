@@ -18,4 +18,18 @@ public class ContainsDuplicate {
     }
     return false;
   }
+
+  public boolean containsDuplicate2(int array[]) {
+    Map<Integer, Integer> map = new HashMap<>();
+
+    for (int num: array) {
+      if(map.containsKey(num)) {
+        return true;
+      } else {
+        map.put(num, num);
+      }
+    }
+
+    return false;
+  }
 }

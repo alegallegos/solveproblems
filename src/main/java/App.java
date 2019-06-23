@@ -17,8 +17,9 @@ public class App {
 //    System.out.println(addTwoNumbers.process(list1, list2));
 
     ContainsDuplicate containsDuplicate = new ContainsDuplicate();
-    int[] array = {0,2,6,4,5,8,9,1};
+    int[] array = {0,2,6,4,2,8,9,1};
     System.out.println(containsDuplicate.containsDuplicate(array));
+    System.out.println(containsDuplicate.containsDuplicate2(array));
   }
 
 }
