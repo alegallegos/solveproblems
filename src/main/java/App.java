@@ -11,6 +11,11 @@ public class App {
     int[] array = {1,2,2,1};
 
     System.out.println(ContainsDuplicateII.process(array, 2));
+    System.out.println(ContainsDuplicateII.processWithMap(array, 2));
+
+    int[] array2 = {1,2,3,1};
+    System.out.println(ContainsDuplicateII.process(array2, 2));
+    System.out.println(ContainsDuplicateII.processWithMap(array2, 2));
 
   }
 
