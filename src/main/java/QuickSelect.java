@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class QuickSelect {
   private final int[] nums;
 
@@ -22,7 +24,7 @@ public class QuickSelect {
   }
 
   private int partition(int firstIndex, int lastIndex) {
-    int pivot = random(firstIndex, lastIndex);
+    int pivot = firstIndex + new Random().nextInt(lastIndex - firstIndex + 1);
     swap(pivot, lastIndex);
 
     for (int i = firstIndex; i < lastIndex; i++) {
@@ -41,9 +43,5 @@ public class QuickSelect {
     int temp = nums[indexA];
     nums[indexA] = nums[indexB];
     nums[indexB] = temp;
-  }
-
-  private int random(int firstIndex, int lastIndex) {
-    return (firstIndex + lastIndex) / 2; //TODO change for real random
   }
 }
